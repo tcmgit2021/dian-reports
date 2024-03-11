@@ -33,12 +33,18 @@ namespace DianReportsApp
 
         public void SavePDF(ReportViewer viewer, string savePath)
         {
-            string deviceInfo = "";
-            byte[] bytes = viewer.LocalReport.Render("PDF", deviceInfo, out string mimeType, out string encoding, out string extension, out string[] streamIds, out Warning[] warnings);
-            using (FileStream stream = new FileStream(@savePath, FileMode.Create))
-            {
-                stream.Write(bytes, 0, bytes.Length);
-            }
+            //string deviceInfo = "";
+            //byte[] bytes = viewer.LocalReport.Render("PDF", deviceInfo, out string mimeType, out string encoding, out string extension, out string[] streamIds, out Warning[] warnings);
+            byte[] pdfBytes = viewer.LocalReport.Render("PDF");
+            File.WriteAllBytes(savePath, pdfBytes);
+            //using (FileStream stream = new FileStream(@savePath, FileMode.Create))
+            //{
+            //    stream.Write(pdfBytes, 0, pdfBytes.Length);
+            //}
+            // Renderiza el informe en formato PDF
+            //byte[] pdfBytes = localReport.Render("PDF");
+            // Guarda el PDF en el disco
+            //File.WriteAllBytes(@savePath, pdfBytes);
         }
 
         private void GenerateDIANReport(string savePath, string cedula)
@@ -47,7 +53,8 @@ namespace DianReportsApp
             {
                 ProcessingMode = ProcessingMode.Local
             };
-            viewer.LocalReport.ReportPath = "DIANCertificado220_2022.rdlc";
+            //viewer.LocalReport.ReportPath = "DIANCertificado220_2023.rdlc";
+            viewer.LocalReport.LoadReportDefinition(File.OpenText("DIANCertificado220_2023.rdlc"));
             try
             {
                 if (checkBoxGenerarTodos.Checked)
@@ -192,7 +199,7 @@ namespace DianReportsApp
                 foreach (DataRow dr in dt.Rows)
                 {
                     idRetenedor = dr["Id_Retenedor_05"].ToString();
-                    razonRetenedor = dr["Razon_Retenedor_11"].ToString();
+                    razonRetenedor = dr["Razon_Retenedor_11"].ToString().TrimEnd();
                     idTrabajador = dr["Id_Trabajador_25"].ToString();
                     email = dr["Email"].ToString();
                     viewer.LocalReport.DataSources.Add(new ReportDataSource("FillReport", this.sp_consultarPersonaBindingSource));
