@@ -192,7 +192,7 @@ namespace DianReportsApp
                 foreach (DataRow dr in dt.Rows)
                 {
                     idRetenedor = dr["Id_Retenedor_05"].ToString();
-                    razonRetenedor = dr["Razon_Retenedor_11"].ToString();
+                    razonRetenedor = dr["Razon_Retenedor_11"].ToString().TrimEnd();
                     idTrabajador = dr["Id_Trabajador_25"].ToString();
                     email = dr["Email"].ToString();
                     viewer.LocalReport.DataSources.Add(new ReportDataSource("FillReport", this.sp_consultarPersonaBindingSource));

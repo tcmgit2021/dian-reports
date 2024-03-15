@@ -3126,7 +3126,7 @@ namespace DianReportsApp.AdamDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DianReportsApp.Properties.Settings.Default.Adam2022ConnectionString;
+            this._connection.ConnectionString = global::DianReportsApp.Properties.Settings.Default.AdamConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

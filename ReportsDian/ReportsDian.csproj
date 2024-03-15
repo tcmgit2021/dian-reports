@@ -11,7 +11,7 @@
     <AssemblyName>DianReportsApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Leonardo\Downloads\</PublishUrl>
+    <PublishUrl>C:\Users\DEV\Documents\CompiladoDian\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>

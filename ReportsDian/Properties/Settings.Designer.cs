@@ -26,43 +26,11 @@ namespace DianReportsApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.108.146.12\\DBINSTSRVBOG;Initial Catalog=Adam;Persist Security Info" +
-            "=True;User ID=user_tcm;Password=Gecolsa2020.")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL2022\\SQLDEV2019;Initial Catalog=Adam;Persist Security Info=True;Us" +
+            "er ID=user_tcm;Password=Gecolsa2020.")]
         public string AdamConnectionString {
             get {
                 return ((string)(this["AdamConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=leo\\sqlexpress;Initial Catalog=dian_2021;Persist Security Info=True;U" +
-            "ser ID=sa")]
-        public string dian_2021_localhost_ConnectionString {
-            get {
-                return ((string)(this["dian_2021_localhost_ConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LEO-LOPEZ\\SQLEXPRESS;Initial Catalog=ADAM;Integrated Security=True")]
-        public string ADAM2022ConnectionStringlocalhost {
-            get {
-                return ((string)(this["ADAM2022ConnectionStringlocalhost"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.108.146.12\\DBINSTSRVBOG;Initial Catalog=Adam;Persist Security Info" +
-            "=True;User ID=ADAM2")]
-        public string Adam2022ConnectionString {
-            get {
-                return ((string)(this["Adam2022ConnectionString"]));
             }
         }
     }
