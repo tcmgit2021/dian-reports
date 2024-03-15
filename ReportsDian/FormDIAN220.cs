@@ -47,7 +47,7 @@ namespace DianReportsApp
             {
                 ProcessingMode = ProcessingMode.Local
             };
-            viewer.LocalReport.ReportPath = "DIANCertificado220_2022.rdlc";
+            viewer.LocalReport.ReportPath = "DIANCertificado220_2023.rdlc";
             try
             {
                 if (checkBoxGenerarTodos.Checked)
@@ -185,17 +185,17 @@ namespace DianReportsApp
             string idTrabajador;
             string email;
             string basePath = savePath;
-            this.sp_consultarPersona_2022TableAdapter.Fill(this.adamDataSet.sp_consultarPersona_2022, cedula);            
-            if (this.adamDataSet.sp_consultarPersona_2022.Count > 0)
+            this.sp_consultarPersona_2023TableAdapter.Fill(this.adam2023DataSet.sp_consultarPersona_2023, cedula);            
+            if (this.adam2023DataSet.sp_consultarPersona_2023.Count > 0)
             {
-                var dt = this.adamDataSet.sp_consultarPersona_2022;                
+                var dt = this.adam2023DataSet.sp_consultarPersona_2023;                
                 foreach (DataRow dr in dt.Rows)
                 {
                     idRetenedor = dr["Id_Retenedor_05"].ToString();
                     razonRetenedor = dr["Razon_Retenedor_11"].ToString().TrimEnd();
                     idTrabajador = dr["Id_Trabajador_25"].ToString();
                     email = dr["Email"].ToString();
-                    viewer.LocalReport.DataSources.Add(new ReportDataSource("FillReport", this.sp_consultarPersonaBindingSource));
+                    viewer.LocalReport.DataSources.Add(new ReportDataSource("DianDataSet2023", this.sp_consultarPersonaBindingSource));
                     savePath = basePath + "/" + razonRetenedor;
                     if (!Directory.Exists(savePath))
                     {

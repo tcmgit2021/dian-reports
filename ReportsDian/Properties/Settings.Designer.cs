@@ -26,11 +26,11 @@ namespace DianReportsApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL2022\\SQLDEV2019;Initial Catalog=Adam;Persist Security Info=True;Us" +
-            "er ID=user_tcm;Password=Gecolsa2020.")]
-        public string AdamConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL2022\\SQLDEV2019;Initial Catalog=Adam2023;Persist Security Info=Tru" +
+            "e;User ID=user_tcm;Password=Gecolsa2020.")]
+        public string Adam2023ConnectionString {
             get {
-                return ((string)(this["AdamConnectionString"]));
+                return ((string)(this["Adam2023ConnectionString"]));
             }
         }
     }

@@ -97,13 +97,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdamDataSet.cs">
-      <DependentUpon>AdamDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="AdamDataSet.Designer.cs">
+    <Compile Include="Adam2023DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AdamDataSet.xsd</DependentUpon>
+      <DependentUpon>Adam2023DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="FormDIAN220.cs">
       <SubType>Form</SubType>
@@ -113,7 +110,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="DIANCertificado220_2022.rdlc">
+    <Compile Include="Settings.cs" />
+    <Content Include="DIANCertificado220_2023.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="FormDIAN220.resx">
@@ -129,16 +127,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="AdamDataSet.xsc">
-      <DependentUpon>AdamDataSet.xsd</DependentUpon>
+    <None Include="Adam2023DataSet.xsc">
+      <DependentUpon>Adam2023DataSet.xsd</DependentUpon>
     </None>
-    <None Include="AdamDataSet.xsd">
+    <None Include="Adam2023DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AdamDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>Adam2023DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="AdamDataSet.xss">
-      <DependentUpon>AdamDataSet.xsd</DependentUpon>
+    <None Include="Adam2023DataSet.xss">
+      <DependentUpon>Adam2023DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
