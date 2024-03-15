@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // La información general acerca de un ensamblado se controla a través del siguiente 
 // conjunto de atributos. Cambie los valores de estos atributos para modificar la información 
 // asociada a un ensamblado.
-[assembly: AssemblyTitle("ReportsDian")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ReportsDian2023")]
+[assembly: AssemblyDescription("Generar Certificados Dian 2023")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ReportsDian")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyTrademark("Tcm Ideas")]
 [assembly: AssemblyCulture("")]
 
 // Al establecer ComVisible en false, se consigue que los tipos de este ensamblado no sean visibles 

@@ -26,8 +26,8 @@ namespace DianReportsApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL2022\\SQLDEV2019;Initial Catalog=Adam2023;Persist Security Info=Tru" +
-            "e;User ID=user_tcm;Password=Gecolsa2020.")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.108.146.12\\DBINSTSRVBOG;Initial Catalog=Adam;Persist Security Info" +
+            "=True;User ID=user_tcm;Password=Gecolsa2020.")]
         public string Adam2023ConnectionString {
             get {
                 return ((string)(this["Adam2023ConnectionString"]));
