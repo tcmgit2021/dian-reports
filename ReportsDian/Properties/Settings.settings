@@ -5,10 +5,10 @@
     <Setting Name="Adam2023ConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=10.108.146.12\DBINSTSRVBOG;Initial Catalog=Adam;Persist Security Info=True;User ID=user_tcm;Password=Gecolsa2020.&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=vmsqladamprod01;Initial Catalog=Adam;Persist Security Info=True;User ID=user_adam;Password=&amp;amp;fxFOSB/4Mf1GKS&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=10.108.146.12\DBINSTSRVBOG;Initial Catalog=Adam;Persist Security Info=True;User ID=user_tcm;Password=Gecolsa2020.</Value>
+      <Value Profile="(Default)">Data Source=vmsqladamprod01;Initial Catalog=Adam;Persist Security Info=True;User ID=user_adam;Password=&amp;fxFOSB/4Mf1GKS</Value>
     </Setting>
   </Settings>
 </SettingsFile>

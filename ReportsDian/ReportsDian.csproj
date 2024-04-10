@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DianReportsApp</RootNamespace>
-    <AssemblyName>DianReportsApp</AssemblyName>
+    <AssemblyName>DianReportsApp2023</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>C:\Users\DEV\Documents\CompiladoDian\</PublishUrl>
@@ -21,8 +21,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>20</ApplicationRevision>
-    <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
+    <TargetCulture>es-CO</TargetCulture>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.3.0.1</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -43,6 +44,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>618D9B662A5EA9F2872F2D04FC1B9A0EB7261B59</ManifestCertificateThumbprint>
@@ -60,7 +62,7 @@
     <StartupObject>DianReportsApp.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>outlook-badge-newmail-win11.ico</ApplicationIcon>
+    <ApplicationIcon>reportDian220.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -114,10 +116,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Content Include="Dian220_2023.ico" />
     <Content Include="DIANCertificado220_2023.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="outlook-badge-newmail-win11.ico" />
+    <Content Include="reportDian220.ico" />
     <EmbeddedResource Include="FormDIAN220.resx">
       <DependentUpon>FormDIAN220.cs</DependentUpon>
     </EmbeddedResource>

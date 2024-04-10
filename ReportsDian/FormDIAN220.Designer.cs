@@ -311,10 +311,9 @@
             this.richTextBoxCuerpo.Location = new System.Drawing.Point(96, 236);
             this.richTextBoxCuerpo.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBoxCuerpo.Name = "richTextBoxCuerpo";
-            this.richTextBoxCuerpo.ReadOnly = true;
             this.richTextBoxCuerpo.Size = new System.Drawing.Size(246, 103);
             this.richTextBoxCuerpo.TabIndex = 47;
-            this.richTextBoxCuerpo.Text = "Buenos días<br/><br/>\nAdjuntamos certificado de ingresos y retenciones año 2022.<" +
+            this.richTextBoxCuerpo.Text = "Buenos días<br/><br/>\nAdjuntamos certificado de ingresos y retenciones año 20**.<" +
     "br/><br/><br/>\nAtentamente,<br/><br/>\nÁrea de nómina<br/>\nSOE<br/><br/>";
             this.richTextBoxCuerpo.TextChanged += new System.EventHandler(this.richTextBoxCuerpo_TextChanged);
             // 
@@ -325,7 +324,7 @@
             this.textBoxAsunto.Name = "textBoxAsunto";
             this.textBoxAsunto.Size = new System.Drawing.Size(246, 20);
             this.textBoxAsunto.TabIndex = 49;
-            this.textBoxAsunto.Text = "Certificado ingresos y retenciones año 2022";
+            this.textBoxAsunto.Text = "Certificado ingresos y retenciones año 20**";
             this.textBoxAsunto.TextChanged += new System.EventHandler(this.textBoxAsunto_TextChanged);
             // 
             // labelAsunto
@@ -462,7 +461,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormDIAN220";
-            this.Text = "FormDIAN220";
+            this.Text = "Reporte DIAN  220 - 2023";
             this.Load += new System.EventHandler(this.FormDIAN220_Load);
             this.tabControlCertificado220.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
